@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | D. Sameer</title>
+
+  <!-- Meta SEO -->
+  <meta name="description" content="404 - Page Not Found. Return to D. Sameer's portfolio.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/d_clean.png">
+
+  <!-- Google Fonts: IBM Plex Mono, Manrope, Bebas Neue -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       404 ERROR PAGE — SYNCED WITH D. SAMEER PORTFOLIO DESIGN SYSTEM
+       Strict 6-Color Palette & Architectural Monospace Aesthetics
+       ========================================================================== */
+    :root {
+      --color-black: #000000;
+      --color-charcoal: #111111;
+      --color-dark-panel: #161616;
+      --color-white: #ffffff;
+      --color-cream: #F8E8D2;
+      --color-grey: #CACACA;
+      --color-text-muted: #888888;
+      --color-orange: #FC5B11;
+      --font-mono: 'IBM Plex Mono', monospace;
+      --font-text: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Bebas Neue', sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-black);
+      color: var(--color-white);
+      font-family: var(--font-text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Subtle Architectural Grid Background */
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 42px 42px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Ambient Orange Glow Orb */
+    .ambient-glow {
+      position: fixed;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: clamp(300px, 45vw, 650px);
+      height: clamp(300px, 45vw, 650px);
+      background: radial-gradient(circle, rgba(252, 91, 17, 0.12) 0%, rgba(252, 91, 17, 0.02) 50%, transparent 75%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(40px);
+    }
+
+    /* Header Strip */
+    .header-bar {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      padding: clamp(1.2rem, 3vh, 2rem) clamp(1.5rem, 4vw, 4rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--color-white);
+    }
+
+    .brand-logo-img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+      transition: transform 0.25s ease;
+    }
+
+    .brand-logo-link:hover .brand-logo-img {
+      transform: scale(1.08);
+    }
+
+    .brand-title {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--color-white);
+    }
+
+    .header-status-badge {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--color-orange);
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(252, 91, 17, 0.1);
+      border: 1px solid rgba(252, 91, 17, 0.25);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--color-orange);
+      box-shadow: 0 0 8px var(--color-orange);
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    /* Main Stage */
+    .stage-main {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: clamp(2rem, 5vh, 4rem) 1.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Massive 404 Hero Number */
+    .error-num {
+      font-family: var(--font-display);
+      font-size: clamp(8rem, 22vw, 17rem);
+      line-height: 0.85;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--color-white);
+      text-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+      user-select: none;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    .error-num::after {
+      content: '404';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(252, 91, 17, 0.4);
+      z-index: -1;
+      transform: translate(4px, 4px);
+    }
+
+    .error-tag {
+      font-family: var(--font-mono);
+      font-size: clamp(0.78rem, 0.95vw, 0.92rem);
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-orange);
+      margin-bottom: 1.2rem;
+      display: inline-block;
+    }
+
+    .error-heading {
+      font-family: var(--font-mono);
+      font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: var(--color-white);
+      margin-bottom: 1.2rem;
+      max-width: 680px;
+    }
+
+    .error-desc {
+      font-family: var(--font-mono);
+      font-size: clamp(0.92rem, 1.1vw, 1.05rem);
+      line-height: 1.6;
+      color: var(--color-text-muted);
+      max-width: 580px;
+      margin-bottom: 2.4rem;
+    }
+
+    /* Actions Row */
+    .actions-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 2rem;
+    }
+
+    /* Primary Pill Button (matches .contact-connect-btn) */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #111111;
+      color: #ffffff;
+      padding: clamp(13px, 1.6vh, 16px) clamp(26px, 2.5vw, 36px);
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: clamp(0.92rem, 1vw, 1.02rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.4),
+        0 10px 24px rgba(0, 0, 0, 0.5),
+        0 24px 48px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: var(--color-orange);
+      border-color: var(--color-orange);
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 
+        0 4px 12px rgba(252, 91, 17, 0.45),
+        0 16px 36px rgba(252, 91, 17, 0.35),
+        0 32px 64px rgba(0, 0, 0, 0.4);
+    }
+
+    .btn-primary svg {
+      width: 15px;
+      height: 15px;
+      transition: transform 0.25s ease;
+    }
+
+    .btn-primary:hover svg {
+      transform: translate(3px, -3px);
+    }
+
+    /* Secondary Ghost Button */
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--color-white);
+      padding: clamp(13px, 1.6vh, 16px) clamp(22px, 2vw, 30px);
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: clamp(0.88rem, 0.95vw, 0.96rem);
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      transition: all 0.25s ease;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* Auto-Redirect Notice */
+    .redirect-notice {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      letter-spacing: -0.01em;
+    }
+
+    .redirect-notice span {
+      color: var(--color-orange);
+      font-weight: 600;
+    }
+
+    /* Footer Strip */
+    .footer-bar {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      padding: 1.5rem clamp(1.5rem, 4vw, 4rem);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-text {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+    }
+
+    .footer-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .footer-nav a {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-nav a:hover {
+      color: var(--color-white);
+    }
+
+    .badge-text-short {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .header-bar {
+        padding: 1rem 1rem;
+      }
+      .brand-title {
+        display: none;
+      }
+      .badge-text-full {
+        display: none;
+      }
+      .badge-text-short {
+        display: inline;
+      }
+      .header-status-badge {
+        font-size: 0.72rem;
+        padding: 4px 10px;
+      }
+      .footer-bar {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+      .actions-row {
+        width: 100%;
+        flex-direction: column;
+      }
+      .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Decorative Grid & Glow -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Top Navigation Header Strip -->
+  <header class="header-bar">
+    <a href="index.html" class="brand-logo-link" aria-label="D. Sameer Home">
+      <img src="assets/d_clean.png" alt="D. Sameer Logo" class="brand-logo-img">
+      <span class="brand-title">D. Sameer</span>
+    </a>
+
+    <div class="header-status-badge">
+      <span class="status-dot"></span>
+      <span class="badge-text-full">404: ROUTE_UNRESOLVED</span>
+      <span class="badge-text-short">404: NOT_FOUND</span>
+    </div>
+  </header>
+
+  <!-- Central Error Stage -->
+  <main class="stage-main">
+    <span class="error-tag">// ERROR_CODE: HTTP_404</span>
+    <h1 class="error-num">404</h1>
+    <h2 class="error-heading">Coordinates Not Found</h2>
+    <p class="error-desc">
+      The requested path does not exist in this architecture or has been moved. 
+      Return to the portfolio to explore selected works and systems.
+    </p>
+
+    <div class="actions-row">
+      <a href="index.html" class="btn-primary" id="return-btn">
+        <span>Return to Portfolio</span>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+
+      <a href="index.html#works" class="btn-secondary">
+        <span>View Works ↗</span>
+      </a>
+
+      <a href="index.html#contact" class="btn-secondary">
+        <span>Contact ↗</span>
+      </a>
+    </div>
+
+    <div class="redirect-notice">
+      Auto-redirecting to home in <span id="countdown">8</span>s
+    </div>
+  </main>
+
+  <!-- Bottom Minimalist Footer Strip -->
+  <footer class="footer-bar">
+    <div class="footer-text">
+      &copy; 2026 D. Sameer &bull; Crafted with Code, Data &amp; Design
+    </div>
+    <ul class="footer-nav">
+      <li><a href="https://github.com/DSameer-infine8" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/dsameer8/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:sameer8creative.tech@gmail.com">Email</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // Smooth, gentle countdown redirect
+    let timeLeft = 8;
+    const countdownEl = document.getElementById('countdown');
+
+    const timer = setInterval(() => {
+      timeLeft--;
+      if (countdownEl) {
+        countdownEl.textContent = timeLeft;
+      }
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        window.location.href = 'index.html';
+      }
+    }, 1000);
+
+    // Cancel countdown if user moves mouse or interacts
+    const cancelRedirect = () => {
+      clearInterval(timer);
+      const notice = document.querySelector('.redirect-notice');
+      if (notice) notice.style.opacity = '0.35';
+    };
+
+    window.addEventListener('scroll', cancelRedirect, { once: true });
+    window.addEventListener('keydown', cancelRedirect, { once: true });
+  </script>
+
+</body>
+
+</html>

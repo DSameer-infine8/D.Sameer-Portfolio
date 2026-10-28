@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en" class="intro-active">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D. Sameer — Data Scientist & AI Developer</title>
+
+  <!-- Meta SEO -->
+  <meta name="description"
+    content="Official portfolio of D. Sameer — Data Scientist, Full Stack Developer, Designer, and AI Enthusiast building intelligent, high-performance systems.">
+  <meta name="keywords"
+    content="D. Sameer, Sameer, Data Scientist, Full Stack Developer, AI, Machine Learning, UI/UX, Portfolio">
+  <meta name="author" content="D. Sameer">
+
+  <!-- Google Fonts Preconnect & Stylesheets: Script, Display Marquee, Grotesque UI & IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Anton&family=Bebas+Neue&family=Cinzel:wght@600;900&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/d_clean.png">
+
+  <!-- Intro & Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Hero & Main Portfolio Stylesheet -->
+  <link rel="stylesheet" href="css/hero.css">
+
+  <!-- Check if intro has already been viewed or bypassed in this session -->
+  <script>
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('loaded') === 'true' || sessionStorage.getItem('sameer_loaded') === 'true' || (window.location.hash && window.location.hash.length > 1)) {
+        document.documentElement.classList.remove('intro-active');
+        document.documentElement.classList.add('intro-bypassed');
+      }
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+
+  <!-- ====================================================================
+       CINEMATIC INTRO & BRAND PRELOADER (Stages 1 - 3)
+       Hardware-accelerated zero-lag animation overlay
+       ==================================================================== -->
+  <div id="intro-stage-wrapper" class="gpu-accel">
+    <!-- Interactive Custom Cursor during Intro -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- STAGE 1: CURSIVE WRITING PRELOADER -->
+    <div id="preloader" class="gpu-accel">
+      <div class="intro-word-container">
+        <svg class="intro-word-svg" viewBox="0 0 292 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <mask id="name-write-mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+              <path id="name-stroke"
+                d="M 2,38 C 0,34 2,28 8,20 C 14,12 24,6 44,2 C 56,1 56,8 50,14 C 42,20 22,26 12,32 C 8,36 14,38 24,37 C 34,36 46,28 62,18 C 68,14 74,6 80,6 C 72,10 62,18 60,25 C 58,32 68,34 76,32 C 84,30 88,22 88,10 C 89,5 91,15 91,26 C 91,32 94,34 98,32 C 102,28 106,20 110,12 C 112,6 116,6 116,12 C 116,20 113,28 114,32 C 114,26 120,16 124,10 C 127,6 132,6 132,14 C 132,22 130,28 130,32 C 130,24 136,16 142,10 C 146,5 152,6 152,14 C 152,22 148,28 148,32 C 150,34 158,32 168,22 C 176,14 186,4 196,2 C 202,2 198,10 188,14 C 180,18 180,26 186,30 C 192,34 204,32 216,22 C 222,14 230,4 238,2 C 244,2 240,10 230,14 C 222,18 222,26 228,30 C 234,34 246,32 256,20 C 260,14 268,4 273,2 C 275,1 286,6 288,8 C 288,12 282,18 280,24 C 278,30 284,33 286,30 C 288,26 290,20 292,16"
+                stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            </mask>
+          </defs>
+          <image class="intro-img-base" href="assets/sameer_charcoal.png" width="292" height="40" />
+          <image class="intro-img-fill" id="intro-fill" href="assets/sameer_white.png" width="292" height="40"
+            mask="url(#name-write-mask)" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- STAGE 2: D EMBLEM & MORPH CONTAINER -->
+    <div id="d-stage-container">
+      <div class="d-emblem-box gpu-accel" id="d-emblem">
+        <svg class="d-svg-shape" viewBox="0 0 348 355" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M 69,0 L 69,3 L 68,4 L 68,8 L 67,9 L 67,13 L 66,14 L 66,18 L 65,19 L 65,24 L 64,25 L 64,29 L 63,30 L 63,34 L 62,35 L 62,39 L 61,40 L 61,44 L 60,45 L 60,49 L 59,50 L 59,54 L 58,55 L 58,60 L 57,61 L 57,65 L 56,66 L 56,70 L 55,71 L 55,75 L 54,76 L 54,80 L 53,81 L 53,85 L 52,86 L 52,90 L 51,91 L 51,96 L 50,97 L 50,101 L 49,102 L 49,106 L 48,107 L 48,111 L 47,112 L 47,116 L 46,117 L 46,121 L 45,122 L 45,126 L 44,127 L 44,132 L 43,133 L 43,137 L 42,138 L 42,142 L 41,143 L 41,147 L 40,148 L 40,152 L 39,153 L 39,157 L 38,158 L 38,162 L 37,163 L 37,168 L 36,169 L 36,173 L 35,174 L 35,178 L 34,179 L 34,183 L 33,184 L 33,188 L 32,189 L 32,193 L 31,194 L 31,198 L 30,199 L 30,204 L 29,205 L 29,209 L 28,210 L 28,214 L 27,215 L 27,219 L 26,220 L 26,224 L 25,225 L 25,229 L 24,230 L 24,234 L 23,235 L 23,240 L 22,241 L 22,245 L 21,246 L 21,250 L 20,251 L 20,255 L 19,256 L 19,260 L 18,261 L 18,265 L 17,266 L 17,270 L 16,271 L 16,276 L 15,277 L 15,281 L 14,282 L 14,286 L 13,287 L 13,291 L 12,292 L 12,296 L 11,297 L 11,301 L 10,302 L 10,306 L 9,307 L 9,312 L 8,313 L 8,317 L 7,318 L 7,322 L 6,323 L 6,327 L 5,328 L 5,332 L 4,333 L 4,337 L 3,338 L 3,342 L 2,343 L 2,348 L 1,349 L 1,353 L 0,354 L 147,354 L 148,353 L 167,353 L 168,352 L 175,352 L 176,351 L 183,351 L 184,350 L 188,350 L 189,349 L 193,349 L 194,348 L 198,348 L 199,347 L 202,347 L 203,346 L 206,346 L 207,345 L 209,345 L 210,344 L 212,344 L 213,343 L 216,343 L 217,342 L 219,342 L 222,340 L 224,340 L 227,338 L 229,338 L 232,336 L 234,336 L 235,335 L 236,335 L 237,334 L 238,334 L 239,333 L 240,333 L 241,332 L 242,332 L 243,331 L 244,331 L 245,330 L 246,330 L 247,329 L 252,327 L 254,325 L 257,324 L 259,322 L 262,321 L 264,319 L 265,319 L 267,317 L 268,317 L 271,314 L 272,314 L 275,311 L 276,311 L 279,308 L 280,308 L 289,299 L 290,299 L 296,293 L 296,292 L 304,284 L 304,283 L 307,280 L 307,279 L 313,272 L 313,271 L 315,269 L 316,266 L 318,264 L 318,263 L 320,261 L 321,258 L 323,256 L 323,255 L 327,248 L 327,246 L 331,239 L 331,237 L 333,234 L 333,232 L 335,229 L 335,227 L 336,226 L 336,224 L 337,223 L 337,221 L 338,220 L 338,217 L 339,216 L 339,214 L 340,213 L 340,210 L 341,209 L 341,206 L 342,205 L 342,201 L 343,200 L 343,196 L 344,195 L 344,191 L 345,190 L 345,182 L 346,181 L 346,173 L 347,172 L 347,132 L 346,131 L 346,124 L 345,123 L 345,116 L 344,115 L 344,112 L 343,111 L 343,107 L 342,106 L 342,103 L 341,102 L 341,99 L 340,98 L 340,96 L 339,95 L 339,93 L 338,92 L 338,90 L 336,87 L 336,85 L 335,84 L 335,83 L 331,76 L 331,74 L 330,73 L 330,72 L 326,67 L 325,64 L 323,62 L 323,61 L 321,59 L 321,58 L 317,54 L 317,53 L 301,37 L 300,37 L 296,33 L 295,33 L 292,30 L 289,29 L 284,25 L 281,24 L 279,22 L 277,22 L 276,21 L 275,21 L 274,20 L 273,20 L 272,19 L 271,19 L 264,15 L 262,15 L 261,14 L 259,14 L 256,12 L 254,12 L 253,11 L 251,11 L 250,10 L 247,10 L 246,9 L 243,9 L 242,8 L 240,8 L 239,7 L 236,7 L 235,6 L 230,6 L 229,5 L 225,5 L 224,4 L 220,4 L 219,3 L 211,3 L 210,2 L 202,2 L 201,1 L 179,1 L 178,0 Z"
+            fill="#000000" />
+        </svg>
+        <div class="d-cursive-text"></div>
+      </div>
+    </div>
+
+    <!-- STAGE 3: HERO SECTION OVERLAY -->
+    <main id="hero-section">
+      <div class="hero-stage">
+        <!-- Handwritten Orange Signature "D.sameer" (#FC5B11) -->
+        <div class="hero-signature-wrap" id="hero-sig">
+          <svg class="hero-signature-svg" viewBox="0 0 570 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <mask id="sig-mask">
+                <path id="sig-mask-stroke"
+                  d="M 160,20 C 110,75 50,140 8,205 C 55,160 120,95 210,18 C 245,6 260,20 245,45 C 200,85 130,135 45,178 C 50,150 95,120 145,95 M 193,155 L 198,155 M 215,165 C 230,140 242,120 244,120 C 238,145 225,165 248,160 C 265,140 288,126 295,138 C 275,155 285,155 308,136 C 320,130 332,152 344,128 C 356,150 368,126 382,154 C 405,136 426,120 436,132 C 420,150 440,146 455,134 C 470,120 482,132 466,150 C 486,146 500,132 516,120 C 530,128 542,144 555,130 L 570,125"
+                  stroke="#FFFFFF" stroke-width="50" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              </mask>
+            </defs>
+            <image href="assets/signature_orange.png" width="570" height="214" mask="url(#sig-mask)" />
+          </svg>
+        </div>
+
+        <!-- Cutout Portrait of Sameer -->
+        <div class="hero-portrait-wrap gpu-accel" id="hero-portrait">
+          <img src="assets/hero_back-removebg-preview.png" alt="Sameer - Creative Frontend Developer"
+            class="hero-portrait-img" id="portrait-img">
+          <div class="hoodie-anchor" id="hoodie-target"></div>
+        </div>
+
+        <!-- Giant Bold Scrolling Marquee across bottom foreground -->
+        <div class="hero-marquee-wrap gpu-accel" id="hero-marquee" aria-label="Scrolling Portfolio Banner">
+          <div class="marquee-track" id="marquee-track">
+            <span class="marquee-text">PORTFOLIO ▪ PORTFOLIO ▪ PORTFOLIO ▪ PORTFOLIO ▪ PORTFOLIO ▪ </span>
+            <span class="marquee-text" aria-hidden="true">PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO -</span>
+          </div>
+        </div>
+
+        <!-- Skip / Explore Button -->
+        <button class="hero-scroll-pill" id="explore-btn" aria-label="Skip to Portfolio">
+          <span>Explore</span>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20M12 20L6 14M12 20L18 14" stroke="#000000" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Staggered Curtain Reveal Transition from Stage 4 -->
+  <div id="curtain-wipe" class="gpu-accel" aria-hidden="true">
+    <div class="curtain-col"></div>
+    <div class="curtain-col"></div>
+    <div class="curtain-col"></div>
+    <div class="curtain-col"></div>
+  </div>
+
+  <!-- Interactive Architectural Canvas Grid with Water Ripple Physics (Click creates stone-in-lake water waves) -->
+  <canvas id="interactive-grid-canvas" class="architectural-grid-canvas" aria-hidden="true"></canvas>
+
+  <div class="page-container">
+
+    <!-- ====================================================================
+         TOP NAVIGATION BAR (Heron AI + Sarthak Sharma inspired)
+         ==================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="nav-inner">
+
+        <!-- Brand Logo: assets/d.png -->
+        <a href="index.html" class="nav-brand-logo" aria-label="D. Sameer Homepage">
+          <img src="assets/d.png" alt="D. Sameer Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Center Nav Links -->
+        <nav class="nav-navigation" aria-label="Main Navigation">
+          <ul class="nav-menu-list">
+            <li><a href="#about" class="nav-menu-link active">About</a></li>
+            <li><a href="#works" class="nav-menu-link">Selected Works</a></li>
+            <li><a href="#repositories" class="nav-menu-link">Repositories</a></li>
+            <li><a href="#internships" class="nav-menu-link">Internship</a></li>
+            <li><a href="#education" class="nav-menu-link">Education</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right CTAs -->
+        <div class="nav-actions-right">
+          <a href="#contact" class="nav-contact-btn">
+            <span>Get in Touch</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button class="mobile-hamburger" id="mobile-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         HERO SECTION: 2-COLUMN BALANCED ARCHITECTURAL CANVAS
+         Image on LEFT side, Narrative on RIGHT side
+         ==================================================================== -->
+    <main class="hero-stage-section" id="hero-stage">
+      <div class="hero-layout-grid layout-swapped">
+
+        <!-- LEFT COLUMN: PORTRAIT IMAGE (Clean cutout with no background or box) -->
+        <section class="hero-visual-column" id="hero-visual">
+          <div class="hero-portrait-container" id="hero-portrait-container">
+            <img src="assets/final_image.png" alt="D. Sameer — Data Scientist, Full Stack Developer, and AI Architect"
+              class="hero-portrait-img" id="hero-portrait-img">
+            <canvas id="hero-glitch-canvas" class="hero-glitch-canvas"></canvas>
+          </div>
+        </section>
+
+
+        <!-- RIGHT COLUMN: ABOUT ME & PERSONAL STATEMENT -->
+        <section class="hero-text-column" id="about">
+
+          <!-- Greeting Line -->
+          <div class="greeting-row" id="hero-greeting">
+            <span class="greeting-salutation">Hello..!</span>
+          </div>
+
+          <!-- Headline Row without script signature -->
+          <div class="headline-row" id="hero-headline">
+            <h1 class="headline-main">
+              I'm <span class="headline-name-accent">D. Sameer</span>
+            </h1>
+          </div>
+
+          <!-- Polished About Me Biography -->
+          <p class="bio-lead-text" id="hero-bio">
+            I'm a <span class="role-pill-highlight">Data Scientist</span>, <span class="role-pill-highlight">Full Stack
+              Developer</span>, <span class="role-pill-highlight">Designer</span>, <span class="role-pill-highlight">AI
+              Enthusiast</span> — and whatever else a project needs to come to life.
+          </p>
+
+          <!-- Action CTAs -->
+          <div class="hero-cta-group" id="hero-ctas">
+            <a href="#works" class="cta-btn-primary">
+              <span>Explore Selected Work</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 5v14M19 12l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <a href="#contact" class="cta-btn-secondary">
+              <span>Let's Connect</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ====================================================================
+         FULLSCREEN SPECIALTIES SCROLLER SECTION (Kinetic Rotating Dial)
+         Covering entire screen (100vh) with kinetic scrolling animation
+         ==================================================================== -->
+    <section class="role-scroller-section" id="specialties" aria-label="Core Specialties & Roles">
+      <div class="scroller-stage">
+
+        <!-- Left Circular Dial Viewport -->
+        <div class="scroller-dial-viewport">
+          <!-- Giant Rotating Dial with ||||| ticks & attached big indicator lines per number -->
+          <div class="scroller-wheel" id="scroller-wheel" role="region" aria-label="Role selector dial">
+            <!-- Radial ||||| ticks and each number's big line injected as crisp vector SVG by JS -->
+          </div>
+        </div>
+
+        <!-- Right Content Viewport -->
+        <div class="scroller-content-area" id="scroller-content">
+
+          <!-- Item 01: Data Scientist -->
+          <article class="role-card-item active" data-index="0" id="role-card-0">
+            <!-- White Liquid Glass macOS Software Apps Dock (Above Data Scientist) -->
+            <div class="role-dock-wrap" id="role-dock-wrap">
+              <div class="mac-dock" id="data-scientist-dock" role="toolbar"
+                aria-label="Data Science Software Apps Dock">
+                <div class="dock-item" data-name="Python" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/python.png" alt="Python" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="SQL" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/sql.png" alt="SQL" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="NumPy" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/NumPy.png" alt="NumPy" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Pandas" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/Pandas.png" alt="Pandas" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Matplotlib" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/Matplotlib.png" alt="Matplotlib" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Scikit-Learn" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/scikit-learn.png" alt="Scikit-Learn" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="PyTorch" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/PyTorch.png" alt="PyTorch" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="TensorFlow" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/TensorFlow.png" alt="TensorFlow" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="OpenCV" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/opencv.png" alt="OpenCV" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="MLflow" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/ml-flow.png" alt="MLflow" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="FastAPI" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/Fastapi.png" alt="FastAPI" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Docker" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/docker.png" alt="Docker" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Google Cloud" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/DataScientist/Google Cloud.png" alt="Google Cloud" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+              </div>
+              <div class="dock-tooltip" id="dock-tooltip" aria-hidden="true"></div>
+            </div>
+            <h2 class="role-main-title">Data Scientist</h2>
+            <p class="role-tagline" id="role-tagline-0">I teach computers how to learn from the past so they can
+              accurately predict the future and spot hidden patterns humans miss</p>
+
+            <!-- Works Section (Project Website Logos) -->
+            <div class="role-works-section" id="role-works-0">
+              <div class="role-works-header">
+                <span class="role-works-label">Works</span>
+                <span class="role-works-line"></span>
+              </div>
+              <div class="role-works-grid">
+                <a href="https://github.com/DSameer-infine8/VeriFace-Advance_Multi_Face_recognition" target="_blank"
+                  rel="noopener noreferrer" class="work-app-tile" data-name="Veriface AI" aria-label="Veriface AI">
+                  <div class="work-tile-box">
+                    <img src="assets/DataScientist/WORK/1.Veriface AI_sq.png" alt="Veriface AI" />
+                  </div>
+                  <span class="work-tile-tooltip">Veriface AI ↗</span>
+                </a>
+                <a href="https://github.com/DSameer-infine8/Shelfy-AI" target="_blank" rel="noopener noreferrer"
+                  class="work-app-tile" data-name="Shelfy AI" aria-label="Shelfy AI">
+                  <div class="work-tile-box">
+                    <img src="assets/DataScientist/WORK/2.Shelfy AI_sq.png" alt="Shelfy AI" />
+                  </div>
+                  <span class="work-tile-tooltip">Shelfy AI ↗</span>
+                </a>
+                <a href="https://huggingface.co/spaces/DSameer8/SelfLearning-Digit-Recognition" target="_blank"
+                  rel="noopener noreferrer" class="work-app-tile" data-name="Smart HandWritten"
+                  aria-label="Smart HandWritten">
+                  <div class="work-tile-box">
+                    <img src="assets/DataScientist/WORK/3.Smart HandWritten_sq.png" alt="Smart HandWritten" />
+                  </div>
+                  <span class="work-tile-tooltip">Smart HandWritten ↗</span>
+                </a>
+                <a href="https://huggingface.co/spaces/DSameer8/Exotic_Crop_Recommendation" target="_blank"
+                  rel="noopener noreferrer" class="work-app-tile" data-name="Exotica" aria-label="Exotica">
+                  <div class="work-tile-box">
+                    <img src="assets/DataScientist/WORK/4.Exotica_sq.png" alt="Exotica" />
+                  </div>
+                  <span class="work-tile-tooltip">Exotica ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 02: AI Engineer -->
+          <article class="role-card-item" data-index="1" id="role-card-1">
+            <!-- White Liquid Glass macOS Software Apps Dock (Above AI Engineer) -->
+            <div class="role-dock-wrap" id="role-dock-wrap-1">
+              <div class="mac-dock" id="ai-engineer-dock" role="toolbar" aria-label="AI Engineering Software Apps Dock">
+                <div class="dock-item" data-name="Python" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/python.png" alt="Python" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Hugging Face" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/hugging-face-icon-seeklogo.png" alt="Hugging Face" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="LangChain" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/langchain.png" alt="LangChain" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="LangGraph" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/langgraph.png" alt="LangGraph" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="RAG" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/RAG.png" alt="RAG" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="ChromaDB" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/chromaDB.png" alt="ChromaDB" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="FastAPI" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/Fastapi.png" alt="FastAPI" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Docker" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/docker.png" alt="Docker" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Google Cloud" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/AIengineer/Google Cloud.png" alt="Google Cloud" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+              </div>
+              <div class="dock-tooltip" id="dock-tooltip-1" aria-hidden="true"></div>
+            </div>
+
+            <h2 class="role-main-title">AI Engineer</h2>
+
+            <p class="role-tagline" id="role-tagline-1">I give software eyes to see and a brain to reason, turning
+              complex manual tasks into effortless, one-click tools</p>
+
+            <!-- Works Section (Project Website Logos) -->
+            <div class="role-works-section" id="role-works-1">
+              <div class="role-works-header">
+                <span class="role-works-label">Works</span>
+                <span class="role-works-line"></span>
+              </div>
+              <div class="role-works-grid">
+                <a href="https://github.com/DSameer-infine8/Shelfy-AI" target="_blank" rel="noopener noreferrer"
+                  class="work-app-tile" data-name="Shelfy AI" aria-label="Shelfy AI">
+                  <div class="work-tile-box">
+                    <img src="assets/AIengineer/WORKS/Shelfy AI_sq.png" alt="Shelfy AI" />
+                  </div>
+                  <span class="work-tile-tooltip">Shelfy AI ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 03: MERN Stack Developer -->
+          <article class="role-card-item" data-index="2" id="role-card-2">
+            <!-- White Liquid Glass macOS Software Apps Dock (Above MERN Stack Developer) -->
+            <div class="role-dock-wrap" id="role-dock-wrap-2">
+              <div class="mac-dock" id="mern-developer-dock" role="toolbar"
+                aria-label="MERN Stack Developer Software Apps Dock">
+                <div class="dock-item" data-name="MongoDB" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/MongoDB.png" alt="MongoDB" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Express.js" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/ExpressJS.png" alt="Express.js" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="React" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/react.png" alt="React" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Node.js" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/node-js.png" alt="Node.js" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Supabase" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/supabase.png" alt="Supabase" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Render" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/Render.png" alt="Render" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Figma" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/Figma.png" alt="Figma" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="Antigravity" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/antigravity.png" alt="Antigravity" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+                <div class="dock-item" data-name="GitHub" style="width: 45px; height: 45px;">
+                  <div class="dock-app-tile">
+                    <img src="assets/MERNstackDeveloper/github.png" alt="GitHub" />
+                  </div>
+                  <div class="dock-running-dot"></div>
+                </div>
+              </div>
+              <div class="dock-tooltip" id="dock-tooltip-2" aria-hidden="true"></div>
+            </div>
+
+            <h2 class="role-main-title">
+              <span class="role-title-line">MERN Stack</span>
+              <span class="role-title-line">Developer</span>
+            </h2>
+
+            <p class="role-tagline" id="role-tagline-2">I design and build complete web apps from scratch—combining
+              clean, modern design with AI speed to ship real products fast</p>
+
+            <!-- Works Section (Project Website Logos) -->
+            <div class="role-works-section" id="role-works-2">
+              <div class="role-works-header">
+                <span class="role-works-label">Works</span>
+                <span class="role-works-line"></span>
+              </div>
+              <div class="role-works-grid">
+                <a href="https://map-it.onrender.com/home" target="_blank" rel="noopener noreferrer"
+                  class="work-app-tile" data-name="Map_it" aria-label="Map_it">
+                  <div class="work-tile-box">
+                    <img src="assets/MERNstackDeveloper/WORKS/Map_it.png" alt="Map_it" />
+                  </div>
+                  <span class="work-tile-tooltip">Map_it ↗</span>
+                </a>
+                <a href="https://github.com/DSameer-infine8/Shelfy-AI" target="_blank" rel="noopener noreferrer"
+                  class="work-app-tile" data-name="Shelfy AI" aria-label="Shelfy AI">
+                  <div class="work-tile-box">
+                    <img src="assets/MERNstackDeveloper/WORKS/Shelfy AI_sq.png" alt="Shelfy AI" />
+                  </div>
+                  <span class="work-tile-tooltip">Shelfy AI ↗</span>
+                </a>
+                <a href="https://dsameer-infine8.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer"
+                  class="work-app-tile" data-name="Tic Tac Toe" aria-label="Tic Tac Toe">
+                  <div class="work-tile-box">
+                    <img src="assets/MERNstackDeveloper/WORKS/Tic Tac Toe.png" alt="Tic Tac Toe" />
+                  </div>
+                  <span class="work-tile-tooltip">Tic Tac Toe ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         GLOSSY LIQUID BLACK ZONE (Overlapping Slide-Up Reveal)
+         Slides up over static specialties section and covers the entire navbar
+         Contains 3 empty glossy liquid black pages: Works, Stack, Contact
+         Refer: animations/page.mp4
+         ==================================================================== -->
+    <div class="liquid-black-zone" id="liquid-zone">
+      <!-- Sticky glossy liquid canvas background covering all 3 pages -->
+      <div class="liquid-black-bg-sticky">
+        <canvas id="liquid-black-canvas" class="liquid-black-canvas"></canvas>
+        <div class="liquid-gloss-rim"></div>
+        <div class="liquid-gloss-vignette"></div>
+      </div>
+
+      <!-- Page 3: Selected Works (100vh) -->
+      <section class="liquid-black-page" id="works" aria-label="Selected Works">
+        <div class="liquid-black-content" id="liquid-black-content-works">
+          <div class="works-showcase-wrapper">
+            <div class="works-layout-grid">
+
+              <!-- LEFT COLUMN: Recently Built + 3 Project Cards -->
+              <div class="works-main-col">
+                <div class="works-heading-group">
+                  <h2 class="works-script-subtitle">Recently Built</h2>
+                  <div class="works-heading-line"></div>
+                </div>
+
+                <div class="works-projects-list">
+
+                  <!-- PROJECT 1: Shelfy AI -->
+                  <div class="project-showcase-row" data-project="shelfy-ai" tabindex="0">
+                    <div class="project-row-main">
+                      <div class="project-logo-frame">
+                        <img src="assets/AIengineer/WORKS/Shelfy AI_sq.png" alt="Shelfy AI Logo"
+                          class="project-logo-asset" loading="lazy" />
+                      </div>
+                      <div class="project-details">
+                        <div class="project-meta-row">
+                          <h3 class="project-title-text">Shelfy AI</h3>
+                          <span class="project-category-pill">Vision + LLM</span>
+                        </div>
+                        <p class="project-desc-text">
+                          End-to-end AI platform combining custom YOLO26n-seg vision and Gemini LLM to scan bookshelves
+                          in &lt;2s. Delivers personalized book recommendations with a 99.1% reduction in API token
+                          costs.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Single white line that animates into 2 lines on hover with options between -->
+                    <div class="project-divider-drawer">
+                      <div class="drawer-line-top"></div>
+                      <div class="drawer-options-bar">
+                        <button type="button" class="drawer-action-btn btn-open-modal" data-modal="shelfy-ai"
+                          aria-label="Open Shelfy AI Case Study">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                          </svg>
+                          <span>Case Study</span>
+                        </button>
+                        <span class="drawer-action-separator">|</span>
+                        <a href="https://github.com/DSameer-infine8/Shelfy-AI" target="_blank" rel="noopener noreferrer"
+                          class="drawer-action-btn" aria-label="Shelfy AI GitHub Repository">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                          </svg>
+                          <span>Github Repo</span>
+                        </a>
+                        <span class="drawer-action-separator">|</span>
+                        <a href="https://shelfy-ai.vercel.app" target="_blank" rel="noopener noreferrer"
+                          class="drawer-action-btn" aria-label="Shelfy AI Deployed Application">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                          </svg>
+                          <span>Deployment</span>
+                        </a>
+                      </div>
+                      <div class="drawer-line-bottom"></div>
+                    </div>
+                  </div>
+
+                  <!-- PROJECT 2: Veriface AI -->
+                  <div class="project-showcase-row" data-project="veriface-ai" tabindex="0">
+                    <div class="project-row-main">
+                      <div class="project-logo-frame">
+                        <img src="assets/DataScientist/WORK/1.Veriface AI_sq.png" alt="Veriface AI Logo"
+                          class="project-logo-asset" loading="lazy" />
+                      </div>
+                      <div class="project-details">
+                        <div class="project-meta-row">
+                          <h3 class="project-title-text">Veriface AI</h3>
+                          <span class="project-category-pill">Biometric Vision</span>
+                        </div>
+                        <p class="project-desc-text">
+                          High-precision computer vision pipeline engineered for concurrent multi-face detection,
+                          landmark alignment, and biometric tracking in unconstrained environments. Extracts deep metric
+                          embeddings for real-time verification.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Single white line that animates into 2 lines on hover with options between -->
+                    <div class="project-divider-drawer">
+                      <div class="drawer-line-top"></div>
+                      <div class="drawer-options-bar">
+                        <button type="button" class="drawer-action-btn btn-open-modal" data-modal="veriface-ai"
+                          aria-label="Open Veriface AI Case Study">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                          </svg>
+                          <span>Case Study</span>
+                        </button>
+                        <span class="drawer-action-separator">|</span>
+                        <a href="https://github.com/DSameer-infine8/VeriFace-Advance_Multi_Face_recognition"
+                          target="_blank" rel="noopener noreferrer" class="drawer-action-btn"
+                          aria-label="Veriface AI GitHub Repository">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                          </svg>
+                          <span>Github Repo</span>
+                        </a>
+                        <span class="drawer-action-separator">|</span>
+                        <a href="https://github.com/DSameer-infine8/VeriFace-Advance_Multi_Face_recognition#demo"
+                          target="_blank" rel="noopener noreferrer" class="drawer-action-btn"
+                          aria-label="Veriface AI Deployed Demo">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                          </svg>
+                          <span>Deployment</span>
+                        </a>
+                      </div>
+                      <div class="drawer-line-bottom"></div>
+                    </div>
+                  </div>
+
+                  <!-- PROJECT 3: Map_It -->
+                  <div class="project-showcase-row" data-project="map-it" tabindex="0">
+                    <div class="project-row-main">
+                      <div class="project-logo-frame">
+                        <img src="assets/MERNstackDeveloper/WORKS/Map_it.png" alt="Map_It Logo"
+                          class="project-logo-asset" loading="lazy" />
+                      </div>
+                      <div class="project-details">
+                        <div class="project-meta-row">
+                          <h3 class="project-title-text">Map_It</h3>
+                          <span class="project-category-pill">Full-Stack MERN</span>
+                        </div>
+                        <p class="project-desc-text">
+                          Full-stack MERN geolocation platform enabling interactive coordinate pinning, spatial marker
+                          exploration, and persistent note cataloging. Built with Node.js, Express, and MongoDB,
+                          deployed live on Render.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Single white line that animates into 2 lines on hover with options between -->
+                    <div class="project-divider-drawer">
+                      <div class="drawer-line-top"></div>
+                      <div class="drawer-options-bar">
+                        <button type="button" class="drawer-action-btn btn-open-modal" data-modal="map-it"
+                          aria-label="Open Map_It Case Study">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                          </svg>
+                          <span>Case Study</span>
+                        </button>
+                        <span class="drawer-action-separator">|</span>
+                        <a href="https://github.com/DSameer-infine8/Map_It" target="_blank" rel="noopener noreferrer"
+                          class="drawer-action-btn" aria-label="Map_It GitHub Repository">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                          </svg>
+                          <span>Github Repo</span>
+                        </a>
+                        <span class="drawer-action-separator">|</span>
+                        <a href="https://map-it.onrender.com/home" target="_blank" rel="noopener noreferrer"
+                          class="drawer-action-btn" aria-label="Map_It Deployed Application">
+                          <svg class="drawer-action-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                          </svg>
+                          <span>Deployment</span>
+                        </a>
+                      </div>
+                      <div class="drawer-line-bottom"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- RIGHT COLUMN: Bold Display "PROJECTS" Watermark & Hover Previews -->
+              <div class="works-side-col" id="works-side-col">
+                <div class="projects-side-showcase" id="projects-side-showcase">
+                  <!-- Default Resting Watermark: Solid White Display Text -->
+                  <span class="projects-display-hero" id="projects-display-hero">PROJECTS</span>
+
+                  <!-- Interactive Showcase Stage (Floating Device Mockups & UI Chips) -->
+                  <div class="project-previews-stage" id="project-previews-stage" aria-hidden="true">
+
+                    <!-- Cluster 1: Shelfy AI (Zero Overlap: iPad on Left, Architecture + Vision + Palette on Right) -->
+                    <div class="project-preview-cluster cluster-shelfy-ai" data-preview-id="shelfy-ai">
+                      <div class="preview-card card-mockup card-shelfy-main">
+                        <img src="shelfy/iPad-PRO-11-localhost.png" alt="Shelfy AI iPad App Interface"
+                          class="preview-img-asset" loading="eager" />
+                      </div>
+                      <div class="preview-card card-satellite card-shelfy-arch">
+                        <img src="shelfy/system_architecture.png" alt="Shelfy AI System Architecture"
+                          class="preview-img-asset" loading="eager" />
+                        <span class="preview-card-caption">Hybrid Vision + LLM</span>
+                      </div>
+                      <div class="preview-card card-satellite card-shelfy-detect">
+                        <img src="shelfy/Screenshot 2026-10-26 152712.png" alt="Shelfy AI YOLO Vision Segmentation"
+                          class="preview-img-asset" loading="eager" />
+                        <span class="preview-card-caption">YOLO26n-seg Perception</span>
+                      </div>
+                      <div class="preview-card card-satellite card-shelfy-palette">
+                        <img src="shelfy/ShelfyAI_colorPallete.png" alt="Shelfy AI Color Palette"
+                          class="preview-img-asset" loading="eager" />
+                      </div>
+                    </div>
+
+                    <!-- Cluster 2: Veriface AI (Zero Overlap: Tracker & Architecture on Left, Palette & MacBook on Right) -->
+                    <div class="project-preview-cluster cluster-veriface-ai" data-preview-id="veriface-ai">
+                      <div class="preview-card card-satellite card-veriface-tracker">
+                        <img src="veriface/Screenshot 2026-10-26 200723.png"
+                          alt="Veriface AI Real-time Multi-Face Tracker" class="preview-img-asset" loading="eager" />
+                        <span class="preview-card-caption">Biometric Alignment</span>
+                      </div>
+                      <div class="preview-card card-satellite card-veriface-arch">
+                        <img src="veriface/System Architecture Diagram.png" alt="Veriface AI System Architecture"
+                          class="preview-img-asset" loading="eager" />
+                        <span class="preview-card-caption">Deep Metric Pipeline</span>
+                      </div>
+                      <div class="preview-card card-satellite card-veriface-palette">
+                        <img src="veriface/VerifaceAI_colorPallete.png" alt="Veriface AI Color Palette"
+                          class="preview-img-asset" loading="eager" />
+                      </div>
+                      <div class="preview-card card-mockup card-veriface-main">
+                        <img src="veriface/Macbook-Air-127.0.0.1.png" alt="Veriface AI MacBook Application"
+                          class="preview-img-asset" loading="eager" />
+                      </div>
+                    </div>
+
+                    <!-- Cluster 3: Map_It (Zero Overlap: Phone on Left, Tablet Center, Palette & Architecture on Right) -->
+                    <div class="project-preview-cluster cluster-map-it" data-preview-id="map-it">
+                      <div class="preview-card card-mockup card-mapit-phone">
+                        <img src="map_it/Galaxy-S22+-map-it.onrender.com.png" alt="Map_It Galaxy Mobile View"
+                          class="preview-img-asset" loading="eager" />
+                      </div>
+                      <div class="preview-card card-mockup card-mapit-tablet">
+                        <img src="map_it/iPad-PRO-11-map-it.onrender.com.png" alt="Map_It Tablet Dashboard"
+                          class="preview-img-asset" loading="eager" />
+                      </div>
+                      <div class="preview-card card-satellite card-mapit-palette">
+                        <img src="map_it/mapIt_colorPallete.png" alt="Map_It Color Palette" class="preview-img-asset"
+                          loading="eager" />
+                      </div>
+                      <div class="preview-card card-satellite card-mapit-arch">
+                        <img src="map_it/map_it_veriface_style_ai.jpg" alt="Map_It System Architecture Diagram"
+                          class="preview-img-asset" loading="eager" />
+                        <span class="preview-card-caption">Full-Stack MERN Arch</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 4: Favorite Repositories & GitHub Calendar Activity (100vh) -->
+      <section class="liquid-black-page" id="repositories" aria-label="Favorite Repositories">
+        <div class="liquid-black-content" id="liquid-black-content-repos">
+          <div class="repos-showcase-wrapper">
+
+            <!-- Heading Group matching assets/next_page.jpeg -->
+            <div class="repos-heading-group">
+              <h2 class="repos-script-subtitle">Favorite Repositories</h2>
+            </div>
+
+            <!-- 3 Repositories Row Divided by White Lines -->
+            <div class="repos-columns-grid">
+
+              <!-- Repo 1: DataScience_Notebook -->
+              <a href="https://github.com/DSameer-infine8/DataScience_Notebook" target="_blank"
+                rel="noopener noreferrer" class="repo-col-item" aria-label="DataScience_Notebook GitHub Repository">
+                <div class="repo-box-header">
+                  <div class="repo-name-badge">
+                    <svg class="repo-folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                    </svg>
+                    <span>DataScience_Notebook</span>
+                  </div>
+                  <svg class="repo-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </div>
+                <p class="repo-desc-text">
+                  My personal Data Science learning journey—well-structured, practical, and code-driven.
+                </p>
+              </a>
+
+              <!-- Repo 2: AI_Engineering_Lab -->
+              <a href="https://github.com/DSameer-infine8/AI_Engineering_Lab" target="_blank" rel="noopener noreferrer"
+                class="repo-col-item" aria-label="AI_Engineering_Lab GitHub Repository">
+                <div class="repo-box-header">
+                  <div class="repo-name-badge">
+                    <svg class="repo-folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                    <span>AI_Engineering_Lab</span>
+                  </div>
+                  <svg class="repo-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </div>
+                <p class="repo-desc-text">
+                  My personal AI driven AI Engineering journey—well-structured, practical, and code-driven.
+                </p>
+              </a>
+
+              <!-- Repo 3: Hello_World -->
+              <a href="https://github.com/DSameer-infine8/Hello-world" target="_blank" rel="noopener noreferrer"
+                class="repo-col-item" aria-label="Hello_World GitHub Repository">
+                <div class="repo-box-header">
+                  <div class="repo-name-badge">
+                    <svg class="repo-folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2">
+                      <polyline points="16 18 22 12 16 6" />
+                      <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                    <span>Hello_World</span>
+                  </div>
+                  <svg class="repo-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </div>
+                <p class="repo-desc-text">
+                  Documentation of the Programming Languages Learnt across real-world software and algorithms.
+                </p>
+              </a>
+
+            </div>
+
+            <!-- White Glossy Liquid Box for GitHub Calendar Activity -->
+            <div class="github-calendar-glass-box" id="github-calendar-box">
+              <!-- Header -->
+              <div class="cal-header-bar">
+                <div class="cal-header-left">
+                  <div class="cal-counter-num" id="cal-count">0</div>
+                  <div class="cal-counter-sub" id="cal-count-sub">CONTRIBUTIONS IN THE LAST YEAR</div>
+                </div>
+              </div>
+
+              <!-- Canvas Stage -->
+              <div class="cal-canvas-stage">
+                <canvas id="github-cal-canvas"></canvas>
+                <div class="cal-hover-tooltip" id="cal-tooltip"></div>
+              </div>
+
+              <!-- Bottom Controls -->
+              <div class="cal-bottom-bar">
+                <a href="https://github.com/DSameer-infine8" target="_blank" rel="noopener noreferrer"
+                  class="cal-status-label" aria-label="DSameer-infine8 GitHub Profile">
+                  <span class="cal-status-dot"></span>
+                  <span>github.com/DSameer-infine8 ↗</span>
+                </a>
+                <div class="cal-controls-group">
+                  <button type="button" class="cal-replay-btn" id="btn-replay" aria-label="Replay calendar animation">
+                    <span>↺</span> REPLAY
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Plain Text Resume Sections (Internship, Education, Awards and Certificates) -->
+      <div class="resume-plain-wrapper">
+
+        <!-- Internship Section -->
+        <section class="resume-plain-section" id="internships" aria-label="Internship Experience">
+          <div class="resume-plain-header">
+            <h2 class="resume-plain-title">Internship</h2>
+            <div class="resume-plain-line"></div>
+          </div>
+
+          <div class="resume-plain-list">
+            <!-- Internship 1: Rubixe -->
+            <div class="resume-plain-item">
+              <div class="resume-plain-row-main">
+                <span class="resume-plain-org">Rubixe, Bangalore</span>
+                <span class="resume-plain-date">Oct 2025 – Jun 2026</span>
+              </div>
+              <div class="resume-plain-row-sub">
+                <span class="resume-plain-role">| Data Science &amp; AI Consultant</span>
+              </div>
+            </div>
+
+            <!-- Internship 2: SuprMentor Technologies -->
+            <div class="resume-plain-item">
+              <div class="resume-plain-row-main">
+                <span class="resume-plain-org">SuprMentor Technologies, Bangalore</span>
+                <span class="resume-plain-date">Sep 2024 – Feb 2025</span>
+              </div>
+              <div class="resume-plain-row-sub">
+                <span class="resume-plain-role">| Full-Stack Developer Intern</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="resume-plain-section" id="education" aria-label="Education">
+          <div class="resume-plain-header">
+            <h2 class="resume-plain-title">Education</h2>
+            <div class="resume-plain-line"></div>
+          </div>
+
+          <div class="resume-plain-list">
+            <!-- Education 1: RYMEC -->
+            <div class="resume-plain-item">
+              <div class="resume-plain-row-main">
+                <span class="resume-plain-org">Rao Bahadur Y.Mahabaleshwarappa Engineering College, Ballari</span>
+                <span class="resume-plain-date">2021 – 2025</span>
+              </div>
+              <div class="resume-plain-row-sub">
+                <span class="resume-plain-role">Bachelor of Engineering (B.E.), in CSE(AI &amp; ML)</span>
+                <span class="resume-plain-grade">CGPA: 8.4/10</span>
+              </div>
+            </div>
+
+            <!-- Education 2: Bellary Independent PU College -->
+            <div class="resume-plain-item">
+              <div class="resume-plain-row-main">
+                <span class="resume-plain-org">Bellary Independent PU College, Alipura, Ballari</span>
+                <span class="resume-plain-date">2020 – 2021</span>
+              </div>
+              <div class="resume-plain-row-sub">
+                <span class="resume-plain-role">Pre-University Course (PUC), in PCMB</span>
+                <span class="resume-plain-grade">Percentage: 86.83%</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Awards and Certificates Section -->
+        <section class="resume-plain-section" id="awards" aria-label="Awards and Certificates">
+          <div class="resume-plain-header">
+            <h2 class="resume-plain-title">Awards and Certificates</h2>
+            <div class="resume-plain-line"></div>
+          </div>
+
+          <div class="resume-plain-awards-list">
+            <div class="resume-plain-award-item">
+              <span class="resume-award-bullet">•</span>
+              <span class="resume-award-text">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate &amp;
+                Generative AI Professional</span>
+            </div>
+            <div class="resume-plain-award-item">
+              <span class="resume-award-bullet">•</span>
+              <span class="resume-award-text">Secured 1st Place in Video Documentary Competition during Student
+                Induction Program (2021–2022)</span>
+            </div>
+            <div class="resume-plain-award-item">
+              <span class="resume-award-bullet">•</span>
+              <span class="resume-award-text">IABAC Certified Data Scientist and Artificial Intelligence Expert</span>
+            </div>
+            <div class="resume-plain-award-item">
+              <span class="resume-award-bullet">•</span>
+              <span class="resume-award-text">Coursera – Prompt Engineering for ChatGPT</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Final Contact Section: Have an idea worth building? -->
+      <section class="liquid-black-page contact-final-page" id="contact"
+        aria-label="Contact - Have an idea worth building?">
+        <div class="contact-showcase-wrapper">
+
+          <!-- Lakeside Artwork Card with rounded corners at top -->
+          <div class="contact-lakeside-card" role="region" aria-label="Call to action artwork">
+            <!-- Interactive WebGL Water Ripple Canvas -->
+            <canvas id="contact-lakeside-canvas" class="contact-lakeside-canvas" aria-hidden="true"></canvas>
+            <img src="assets/Lakeside.png" alt="Lakeside peaceful tree illustration" class="contact-lakeside-img"
+              loading="lazy" />
+
+            <div class="contact-card-inner">
+              <!-- Top Big Bold Heading placed INSIDE the image card -->
+              <h2 class="contact-main-heading">Have an idea worth building?</h2>
+
+              <!-- Right Content: 2-line statement & button -->
+              <div class="contact-card-content">
+                <p class="contact-card-subline">
+                  <span class="subline-line">Let's turn it into something meaningful,</span>
+                  <span class="subline-line">useful, and ready for the real world.</span>
+                </p>
+                <a href="mailto:sameer8creative.tech@gmail.com" class="contact-connect-btn" aria-label="Let's Connect">
+                  <span>Let's Connect</span>
+                  <svg class="contact-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Social Media Circular Logos -->
+          <div class="contact-social-row" role="navigation" aria-label="Social Media Accounts">
+            <!-- GitHub -->
+            <a href="https://github.com/DSameer-infine8" target="_blank" rel="noopener noreferrer"
+              class="contact-social-circle" aria-label="GitHub Profile" title="GitHub">
+              <svg viewBox="0 0 24 24" class="social-svg-icon" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/dsameer8/" target="_blank" rel="noopener noreferrer"
+              class="contact-social-circle" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg viewBox="0 0 24 24" class="social-svg-icon" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.92 0 1.66-.74 1.66-1.66s-.74-1.66-1.66-1.66a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.66 1.66 1.66m1.39 9.74v-8.37H5.07v8.37h2.78z" />
+              </svg>
+            </a>
+
+            <!-- Kaggle -->
+            <a href="https://www.kaggle.com/sameerinfine8" target="_blank" rel="noopener noreferrer"
+              class="contact-social-circle" aria-label="Kaggle Profile" title="Kaggle">
+              <svg viewBox="0 0 24 24" class="social-svg-icon" fill="currentColor">
+                <path
+                  d="M18.825 23.859c-.022.046-.07.076-.123.076H15.68a.14.14 0 0 1-.106-.051l-4.704-5.836-1.395 1.328v4.444c0 .077-.063.14-.14.14H6.84a.14.14 0 0 1-.14-.14V.14c0-.077.063-.14.14-.14h2.499c.077 0 .14.063.14.14v14.935l5.952-6.037a.142.142 0 0 1 .102-.043h3.18c.053 0 .1.03.122.076a.145.145 0 0 1-.013.155l-6.236 6.136 6.438 8.358c.036.046.041.11.013.155z" />
+              </svg>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:sameer8creative.tech@gmail.com" class="contact-social-circle" aria-label="Send Email"
+              title="Email">
+              <svg viewBox="0 0 24 24" class="social-svg-icon" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/d_sameer_08/" target="_blank" rel="noopener noreferrer"
+              class="contact-social-circle" aria-label="Instagram Profile" title="Instagram">
+              <svg viewBox="0 0 24 24" class="social-svg-icon" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           ARCHITECTURAL FOOTER STRIP
+           ==================================================================== -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-copyright">
+            <span>&copy; 2026 D. Sameer &bull; Crafted with Code, Data &amp; Design</span>
+          </div>
+          <ul class="footer-links-list">
+            <li><a href="index.html?replay=true" onclick="try{sessionStorage.removeItem('sameer_loaded');}catch(e){}">Replay Intro ↺</a></li>
+            <li><a href="https://github.com/DSameer-infine8" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/dsameer8/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.kaggle.com/sameerinfine8" target="_blank" rel="noopener">Kaggle ↗</a></li>
+            <li><a href="https://www.instagram.com/d_sameer_08/" target="_blank" rel="noopener">Instagram ↗</a></li>
+            <li><a href="mailto:sameer8creative.tech@gmail.com">Email ↗</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+  <!-- ====================================================================
+       PROJECT CASE STUDY INTERACTIVE MODAL
+       ==================================================================== -->
+  <div class="case-study-modal-backdrop" id="case-study-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="case-study-modal-container">
+      <button type="button" class="case-study-modal-close" id="modal-close-btn" aria-label="Close Case Study Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="case-study-modal-body" id="modal-dynamic-content">
+        <!-- Injected dynamically via JS based on clicked project -->
+      </div>
+      <div class="case-study-modal-footer" id="modal-footer-actions">
+        <!-- Action buttons docked persistently at bottom -->
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP 3 Core & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- GitHub Contributions Data (Synchronous local file:/// & offline compatibility) -->
+  <script src="js/contributions-data.js"></script>
+
+  <!-- Lakeside Artwork Data (Synchronous local file:/// & offline compatibility) -->
+  <script src="js/lakeside-data.js"></script>
+
+  <!-- Cinematic Intro & Brand Preloader Master Script -->
+  <script src="js/main.js"></script>
+
+  <!-- Hero Motion & Interactive Portfolio Logic -->
+  <script src="js/hero.js"></script>
+</body>
+
+</html>
